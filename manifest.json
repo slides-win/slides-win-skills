@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "name": "@slides-win/skills",
+  "version": "0.1.0-beta.1",
+  "skills": [
+    "slides-win-campaigns",
+    "slides-win-refine",
+    "slides-win-social-remix"
+  ],
+  "files": [
+    {
+      "path": "skills/slides-win-campaigns/SKILL.md",
+      "sha256": "576569d501e6667bcf291a2da1058194f085ac5aa49c7eb8b9ec25902e6a7934"
+    },
+    {
+      "path": "skills/slides-win-refine/SKILL.md",
+      "sha256": "11aa9b65b0ee5e8a56cfb83077622005dbc7af3bd6ef55192fadbc5f7ac54d1d"
+    },
+    {
+      "path": "skills/slides-win-social-remix/SKILL.md",
+      "sha256": "37fe365f97f2a5eaf7a058ce8a2d98996b67462c3187d63b333e871a45023bd1"
+    }
+  ]
+}

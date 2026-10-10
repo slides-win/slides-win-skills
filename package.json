@@ -1,0 +1,46 @@
+{
+  "name": "@slides-win/skills",
+  "version": "0.1.0-beta.1",
+  "description": "Agent skills for creating, reviewing and refining Slides.win campaigns through MCP.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://slides.win",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slides-win/slides-win-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slides-win/slides-win-skills/issues"
+  },
+  "keywords": [
+    "slides-win",
+    "agent-skill",
+    "agent-skills",
+    "mcp",
+    "codex",
+    "claude-code",
+    "app-store",
+    "google-play"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "slides-win-skills": "bin/install.mjs"
+  },
+  "files": [
+    "bin/install.mjs",
+    "skills",
+    "manifest.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
