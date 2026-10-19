@@ -1,6 +1,6 @@
 # Slides.win agent skills
 
-Create and refine App Store, Google Play and social campaigns through the Slides.win MCP API. The next package contains four skills:
+Create and refine App Store, Google Play and social campaigns through the Slides.win MCP API. The package contains four skills:
 
 - `slides-win-onboarding`: connect the account, verify available tools and reach a first useful draft or brief.
 - `slides-win-campaigns`: create a complete store campaign from product facts and authentic screenshots, inspect previews, then export.
@@ -42,7 +42,7 @@ For example: “Use Slides.win to create an English App Store campaign for my ex
 
 The skills discover the live tool schemas. They preserve original-image provenance, account isolation, revisions, field locks, credit budgets and the approval required for store publication. They do not turn generated interfaces into authentic screenshots, complete provider checkout or publish a store listing through installation. Social publication remains a manual handoff.
 
-This first npm release is a beta. The instructions and installer are MIT licensed; a Slides.win account and the service's normal allowances are separate. Issues: [public tracker](https://github.com/slides-win/slides-win-skills/issues).
+This npm release is a beta. The instructions and installer are MIT licensed; a Slides.win account and the service's normal allowances are separate. Issues: [public tracker](https://github.com/slides-win/slides-win-skills/issues).
 
 ## Develop
 
@@ -55,4 +55,4 @@ npm pack --ignore-scripts
 
 App Store resource requests can include a 3840 × 1646 header, a 3:2 search illustration or an intent-specific custom page pack. The campaign skill uses revision-checked resource tools, real product screens and imported art, then prepares native RGB PNG/JPEG and a manifest. These exports do not create, submit, approve or publish an Apple page. App Preview video editing is unavailable.
 
-The local `0.1.0-beta.2` candidate adds the onboarding skill. The published npm version remains `0.1.0-beta.1` until this candidate is separately released.
+`0.1.0-beta.2` adds the onboarding skill and is published under the `beta` tag. The `latest` tag remains at `0.1.0-beta.1`.
