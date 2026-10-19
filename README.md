@@ -1,14 +1,15 @@
 # Slides.win agent skills
 
-Create and refine App Store, Google Play and social campaigns through the Slides.win MCP API. The package contains three skills:
+Create and refine App Store, Google Play and social campaigns through the Slides.win MCP API. The next package contains four skills:
 
+- `slides-win-onboarding`: connect the account, verify available tools and reach a first useful draft or brief.
 - `slides-win-campaigns`: create a complete store campaign from product facts and authentic screenshots, inspect previews, then export.
 - `slides-win-social-remix`: adapt an authorized social reference into an original creation.
 - `slides-win-refine`: make focused edits and localizations while preserving facts, locks and revisions.
 
 ## Install
 
-Node.js 22 or later is required for the npm installer. Install all three skills for Codex in the current project:
+Node.js 22 or later is required for the npm installer. Install all four skills for Codex in the current project:
 
 ```sh
 npx @slides-win/skills@beta install --agent codex
@@ -31,7 +32,7 @@ Alternatively, use the open skills CLI from this public repository:
 npx skills add slides-win/slides-win-skills -a codex
 ```
 
-You can also copy the three folders from `skills/` into your agent's skills directory.
+You can also copy the four folders from `skills/` into your agent's skills directory.
 
 ## Connect Slides.win
 
@@ -50,4 +51,8 @@ npm test
 npm pack --ignore-scripts
 ```
 
-`manifest.json` records the bundled skill checksums. The npm package includes only the installer, three skills, manifest, package metadata, README and license. Tests remain in the public repository. Application code and private history are excluded.
+`manifest.json` records the bundled skill checksums. The npm package includes only the installer, four skills, manifest, package metadata, README and license. Tests remain in the public repository. Application code and private history are excluded.
+
+App Store resource requests can include a 3840 × 1646 header, a 3:2 search illustration or an intent-specific custom page pack. The campaign skill uses revision-checked resource tools, real product screens and imported art, then prepares native RGB PNG/JPEG and a manifest. These exports do not create, submit, approve or publish an Apple page. App Preview video editing is unavailable.
+
+The local `0.1.0-beta.2` candidate adds the onboarding skill. The published npm version remains `0.1.0-beta.1` until this candidate is separately released.

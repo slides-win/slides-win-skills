@@ -1,6 +1,6 @@
 ---
 name: slides-win-campaigns
-description: Create complete App Store and Google Play campaigns through Slides.win MCP, from authentic screenshots to visually reviewed localized exports.
+description: Create or resume App Store screenshots, headers and search artwork, plus Google Play campaigns from confirmed facts and authentic assets.
 ---
 
 Turn a product brief and authentic app screens into an editable, coherent store campaign.
@@ -44,3 +44,12 @@ Deliver the exact editor link and completed export links from current results. D
 Generation troubleshooting: `generation_list` by subjectId or requestId, then `generation_get` supplies the submitted prompt/settings and reference order. `generation_reference_view` inspects a saved referenceIndex. `returned` means the provider returned successfully; it does not prove that application validation accepted or saved the output. Older calls may have no record. Never reconstruct historical settings from today's defaults.
 
 Store publication requires a separate approval of the exact content hash and destination returned by `publication_prepare`. Creation, export, asset selection and a prior publication do not authorize a new publication. Social publication is a manual handoff. Checkout tools return hosted links and never complete a payment. Preserve spending authorization already given; obtain a new ceiling only when expanding it.
+
+## App Store headers, search artwork
+
+Discover `app_store_resources_get`, `app_store_resources_save` and `app_store_preview` for these deliverables. Work inside the existing campaign with its current revision, brand and owned sources. `appStoreHeader` produces one opaque RGB PNG at 3840 × 1646 per locale. Choose one search resolution: `appStoreSearch` at 1920 × 1280 or `appStoreSearch4k` at 3840 × 2560, encoded opaque RGB JPEG. Source layers and optional localized short copy remain editable. Never enlarge original pixels without a specific request; never replace app UI with generated imagery. Use signed uploads for original images up to 32 MiB.
+
+Use the existing validation, text review and resumable export tools. Deliver native images, originals, SVGs and a checksum manifest. These are files to import manually in App Store Connect. No Apple page is created, submitted, approved or published. The current connector supports standard screenshot operations only. App Preview montage, video export and poster extraction are separate and are not implemented in the studio. Do not invent gameplay, native UI, ranking gains or Apple approval.
+
+
+Choose the studio destination with `campaign_destination_save` at the current revision. App Store formats are `iphone69`, `iphone65`, `ipad13`, `appStoreHeader` and one of `appStoreSearch`/`appStoreSearch4k`. Google Play formats are `android`, `tablet7`, `tablet10`, `feature`. Retain authentic sources and languages, review native previews, then use the existing resumable export. Switching destination preserves editable content and resets approval; derive an independent creation when the user wants both versions.

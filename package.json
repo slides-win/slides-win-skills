@@ -1,6 +1,6 @@
 {
   "name": "@slides-win/skills",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "description": "Agent skills for creating, reviewing and refining Slides.win campaigns through MCP.",
   "type": "module",
   "license": "MIT",
